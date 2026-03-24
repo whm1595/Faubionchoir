@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessibility statement for the Faubion Choir website. Learn about our commitment to WCAG 2.1 AA compliance.">
+  <title>Accessibility - FAUBION CHOIR</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html" aria-label="Faubion Choir - Home">FAUBION CHOIR</a>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+        <span class="close-icon" aria-hidden="true">&#10005;</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directors.html">Directors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="a11y-heading">
+      <h1 id="a11y-heading">Accessibility Statement</h1>
+      <p>Our commitment to making this website accessible to everyone.</p>
+    </section>
+
+    <section class="section" aria-labelledby="commitment-heading">
+      <div class="section-inner" style="max-width: 750px;">
+        <h2 id="commitment-heading">Our Commitment</h2>
+        <p>Faubion Choir is committed to ensuring that our website is accessible to people with disabilities. We strive to meet or exceed the requirements of the <strong>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</strong>, which is the standard referenced by the Americans with Disabilities Act (ADA).</p>
+
+        <h2>Accessibility Features</h2>
+        <p>This website includes the following accessibility features:</p>
+        <ul style="margin-bottom: var(--space-lg); padding-left: var(--space-lg); line-height: 2;">
+          <li><strong>Semantic HTML</strong> &mdash; Proper heading hierarchy, landmarks, and page structure for screen readers</li>
+          <li><strong>Keyboard Navigation</strong> &mdash; All interactive elements are fully accessible via keyboard</li>
+          <li><strong>Skip Navigation</strong> &mdash; A skip link allows keyboard users to jump directly to main content</li>
+          <li><strong>Color Contrast</strong> &mdash; All text meets WCAG AA minimum contrast ratios (4.5:1 for normal text, 3:1 for large text)</li>
+          <li><strong>Responsive Design</strong> &mdash; The site works on all screen sizes and supports text resizing up to 200%</li>
+          <li><strong>Focus Indicators</strong> &mdash; Visible focus outlines on all interactive elements</li>
+          <li><strong>ARIA Labels</strong> &mdash; Descriptive labels for navigation, buttons, and interactive elements</li>
+          <li><strong>Alternative Text</strong> &mdash; Descriptive alt text for all meaningful images</li>
+          <li><strong>Form Accessibility</strong> &mdash; All form fields have associated labels and required field indicators</li>
+          <li><strong>Reduced Motion</strong> &mdash; Animations are disabled when users prefer reduced motion</li>
+          <li><strong>High Contrast Support</strong> &mdash; Enhanced styles for users who prefer high contrast</li>
+          <li><strong>Link Context</strong> &mdash; External links indicate when they open in a new window</li>
+        </ul>
+
+        <h2>Feedback</h2>
+        <p>We welcome feedback about the accessibility of this website. If you encounter any barriers or have suggestions for improvement, please <a href="contact.html">contact us</a>. We take accessibility concerns seriously and will work to address any issues promptly.</p>
+
+        <h2>Standards</h2>
+        <p>This website aims to conform to:</p>
+        <ul style="margin-bottom: var(--space-lg); padding-left: var(--space-lg); line-height: 2;">
+          <li>WCAG 2.1 Level AA</li>
+          <li>Section 508 of the Rehabilitation Act</li>
+          <li>ADA Title II (as applicable to public school programs)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directors.html">Directors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/faubionsingers/" target="_blank" rel="noopener noreferrer" aria-label="Faubion Choir on Instagram (opens in new window)">
+          Instagram: @faubionsingers
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Faubion Middle School Choir &bull; McKinney, Texas<br>
+        <small>Part of <a href="https://www.mckinneyisd.net" target="_blank" rel="noopener noreferrer">McKinney ISD</a></small><br>
+        <small><a href="accessibility.html">Accessibility Statement</a></small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
